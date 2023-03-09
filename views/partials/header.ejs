@@ -1,0 +1,18 @@
+<header>
+  <a href="/">Xenol</a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <% if (locals.isLoggedIn) {%>
+
+    <a href="/logout"> Logout</a>
+
+    <% }else{ %>
+    <a href="/login">login</a>
+    <% } %>
+
+    <a href="/register">Register</a>
+    <a href="/products">Products</a>
+    <a href="/welcome">Karibu</a>
+  </nav>
+</header>
